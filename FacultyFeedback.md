@@ -11,6 +11,9 @@
 ## Week 4 ##
 
 ## Week 5 ##
+- Try to have a single owners per story, which you did pretty well
+- Have a description for each story
+- Have acceptance criteria for each story
 
 ## Week 6 ##
 
