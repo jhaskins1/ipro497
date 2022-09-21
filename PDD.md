@@ -18,7 +18,7 @@ Young adults who struggle with finding new movies to watch that they actually en
 - Django
 #### Backend Tech
 - Python
-- MongoDB
+- SQLite
  
 ## Top Application Capabilities (name at least 5)
 - Keep track of what movies a user has watched and whether they liked it or not
