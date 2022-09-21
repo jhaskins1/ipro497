@@ -78,19 +78,19 @@ Every team member is living in the same time zone.
 
 | Week | Sprint Leader |
 | --------  | ------------------- |
-| 1 - Problem Framing                                 | Team member #N              |
-| 2 - Problem Framing                                 | Team member #N             |
-| 3 - Problem Framing                                 | Team member #N+1|
-| 4 - Problem Framing                                 | Team member #N+1|
-| 5 - Think, build, test, and demo for midterm        | Team member #N+2 |
-| 6 - Think, build, test, and demo for midterm        | Team member #N+2 |
-| 7 - Think, build, test, and demo for midterm        | Team member #N+3|
-| 8 - Think, build, test, and demo for midterm        | Team member #N+3|
-| 9 - Think, build, test, and demo for final          | Team member ...             |
-| 10 - Think, build, test, and demo for final	      |  Team member ...      |
-| 11 - Think, build, test, and demo for final         | Team member ...         |
-| 12 - Think, build, test, and demo for final         | Team member ...          |
-| 13 - Think, build, test, and demo for final         | Team member ...          |
-| 14 - Presentation dry run                           | Team member ...   |
-| 15 - Presentation                                   | Team member ... |
+| 1 - Problem Framing                                 | |
+| 2 - Problem Framing                                 | |
+| 3 - Problem Framing                                 | |
+| 4 - Problem Framing                                 | |
+| 5 - Think, build, test, and demo for midterm        | Joseph Haskins |
+| 6 - Think, build, test, and demo for midterm        | Joseph Haskins |
+| 7 - Think, build, test, and demo for midterm        | Khiem Truong |
+| 8 - Think, build, test, and demo for midterm        | Khiem Truong |
+| 9 - Think, build, test, and demo for final          | Dakota Mszal|
+| 10 - Think, build, test, and demo for final	      | Dakota Mszal |
+| 11 - Think, build, test, and demo for final         | Sean Hogarty |
+| 12 - Think, build, test, and demo for final         | Sean Hogarty |
+| 13 - Think, build, test, and demo for final         | Imaduddin Sheikh |
+| 14 - Presentation dry run                           | Imaduddin Sheikh |
+| 15 - Presentation                                   | Undecided |
 
