@@ -16,6 +16,12 @@
 - Have acceptance criteria for each story
 
 ## Week 6 ##
+- Joseph is the sprint review lead
+- Work on single owner per story
+- Look at improving acceptance criterion
+- Mid-term presentation upcoming Oct 11
+- Consider labels to identify key stories for the mid-term
+- Sprint lead please lead the team in their first retro - https://retrotool.app/
 
 ## Week 7 ##
 
