@@ -11,7 +11,6 @@ Television / Movie watchers
 Web App
 
 | Name |	Location	| Time zone offset from Chicago (Chicago is 0 offset)|
-| Dakota | Bolingbrook | 0 |
 | --- | --- | --- |
 | --- | --- | --- |
 | --- | --- | --- |
