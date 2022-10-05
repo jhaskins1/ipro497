@@ -24,6 +24,10 @@
 - Sprint lead please lead the team in their first retro - https://retrotool.app/
 
 ## Week 7 ##
+- 10/11 is mid-term presentation.  Focus is on the demo with a simple deck walkthrough
+- Work through who is presenting what and in what order
+- Know what are you demoing and in what order (on what machine)
+Please add an item to your boards to do this github.com/mschray/IPro497Sample/blob/main/Course%20Content/SprintReviewProjectViews.md
 
 ## Week 8 ##
 
