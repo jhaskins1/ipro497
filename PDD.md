@@ -84,10 +84,10 @@ Every team member is living in the same time zone.
 | 4 - Problem Framing                                 | |
 | 5 - Think, build, test, and demo for midterm        | Joseph Haskins |
 | 6 - Think, build, test, and demo for midterm        | Joseph Haskins |
-| 7 - Think, build, test, and demo for midterm        | Khiem Truong |
-| 8 - Think, build, test, and demo for midterm        | Khiem Truong |
-| 9 - Think, build, test, and demo for final          | Dakota Mszal|
-| 10 - Think, build, test, and demo for final	      | Dakota Mszal |
+| 7 - Think, build, test, and demo for midterm        | Dakota Mszal |
+| 8 - Think, build, test, and demo for midterm        | Dakota Mszal |
+| 9 - Think, build, test, and demo for final          | Khiem Truong |
+| 10 - Think, build, test, and demo for final	      | Khiem Truong |
 | 11 - Think, build, test, and demo for final         | Sean Hogarty |
 | 12 - Think, build, test, and demo for final         | Sean Hogarty |
 | 13 - Think, build, test, and demo for final         | Imaduddin Sheikh |
