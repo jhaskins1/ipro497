@@ -30,7 +30,16 @@
 Please add an item to your boards to do this github.com/mschray/IPro497Sample/blob/main/Course%20Content/SprintReviewProjectViews.md
 
 ## Week 8 ##
-
+- Sean's audio seems to be choppy every class
+- Like the name, NewVie, it's clever
+- People over 30 have a lack of time as well.
+- Consider sharing an app not the while screen or having a second monitor to allow to check notifications on another model
+- Scenarios are solid
+- TMDB is a good find
+- Get a free website on GPE, AWS or Azure
+- Nice to have the team help with multi-value
+- No code to show?  Move beyond design
+ 
 ## Week 9 ##
 
 ## Week 10 ##
