@@ -41,6 +41,11 @@ Please add an item to your boards to do this github.com/mschray/IPro497Sample/bl
 - No code to show?  Move beyond design
  
 ## Week 9 ##
+- Your team has not setup the tabs for the sprint review.  Please create a story to do this (https://github.com/mschray/IPro497Sample/blob/main/Course%20Content/SprintReviewProjectViews.md)
+- Know who your sprint review lead is before the instructor arrives
+- Let's improve story quality by ensuring all stories have acceptance criteria
+- Think demo of your product when I arrive for sprint review - who is going to demo
+- Know who your sprint review lead is before the instructor arrives
 
 ## Week 10 ##
 
