@@ -7,7 +7,7 @@ This product is desingned for those who tend to be indecisive when selecting wha
 ## Customer
 Television / Movie watchers
 
-# Applicaation Type
+# Application Type
 Web App
 
 | Name |	Location	| Time zone offset from Chicago (Chicago is 0 offset)|
@@ -15,3 +15,8 @@ Web App
 | --- | --- | --- |
 | --- | --- | --- |
 | --- | --- | --- |
+
+
+## Instructions to get the application started on the local machine
+
+
