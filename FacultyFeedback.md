@@ -48,6 +48,9 @@ Please add an item to your boards to do this github.com/mschray/IPro497Sample/bl
 - Know who your sprint review lead is before the instructor arrives
 
 ## Week 10 ##
+- Stories need acceptance criterion
+- Make sure you are using your class time effectively - I allow you as much class time as possible to do you work in class
+- Please be ready to demo - when you have working code demoing should not be a big deal
 
 ## Week 11 ##
 
