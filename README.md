@@ -43,3 +43,9 @@ virtualenv venv
 pip install -r requirements.txt
 ```
 
+5. Run the application on local server.
+```
+cd main
+py manage.py runserver
+```
+
