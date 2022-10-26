@@ -19,6 +19,10 @@ Web App
 
 ## Instructions to get the application started on the local machine
 
+Versions:
+Python - 3.10.4
+Pip - 22.2.2
+
 1. Clone the repository on your local machine. (Visual Studio Code is most preferred for this project)
 
 2. In the project folder, open up the terminal and create a virtual environment for the project.
