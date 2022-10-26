@@ -29,22 +29,22 @@ Pip - 22.2.2
 
 2. In the project folder, open up the terminal and create a virtual environment for the project. (Make sure you have virtualenv installed on machine using pip)
 
-**Windows**
+- **Windows**
 ```
 virtualenv venv
 ```
-**MacOS/Unix**
+- **MacOS/Unix**
 ```
 python3 -m venv venv
 ```
 
 3. Activate the virtual environment for the local project.
 
-**Windows**
+- **Windows**
 ```
 .\venv\Scripts\Activate.ps1
 ```
-**MacOS/Unix**
+- **MacOS/Unix**
 ```
 source venv/bin/activate
 ```
