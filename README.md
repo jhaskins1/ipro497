@@ -19,4 +19,23 @@ Web App
 
 ## Instructions to get the application started on the local machine
 
+1. Clone the repository on your local machine. (Visual Studio Code is most preferred for this project)
+
+2. In the project folder, open up the terminal and create a virtual environment for the project.
+
+```
+virtualenv venv
+```
+
+3. Activate the virtual environment for the local project.
+
+```
+.\venv\Scripts\Activate.ps1
+```
+
+4. Run the command below on the terminal to install any project requirements.
+
+```
+pip install -r requirements.txt
+```
 
