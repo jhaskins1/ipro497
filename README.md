@@ -40,8 +40,13 @@ python3 -m venv venv
 
 3. Activate the virtual environment for the local project.
 
+**Windows**
 ```
 .\venv\Scripts\Activate.ps1
+```
+**MacOS/Unix**
+```
+source venv/bin/activate
 ```
 
 4. Run the command below on the terminal to install any project requirements.
