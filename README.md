@@ -23,12 +23,19 @@ Versions:
 Python - 3.10.4
 Pip - 22.2.2
 
+
+
 1. Clone the repository on your local machine. (Visual Studio Code is most preferred for this project)
 
-2. In the project folder, open up the terminal and create a virtual environment for the project.
+2. In the project folder, open up the terminal and create a virtual environment for the project. (Make sure you have virtualenv installed on machine using pip)
 
+**Windows**
 ```
 virtualenv venv
+```
+**MacOS/Unix**
+```
+python3 -m venv venv
 ```
 
 3. Activate the virtual environment for the local project.
@@ -48,4 +55,5 @@ pip install -r requirements.txt
 cd main
 py manage.py runserver
 ```
+
 
