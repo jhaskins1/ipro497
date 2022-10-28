@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .forms import SignUpForm
 
 def index(request):
-    return HttpResponse("Hello world!")
+    return render(request, 'app/home.html')
 
 def signup(request):
     form = SignUpForm()
