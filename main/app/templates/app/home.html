@@ -2,10 +2,39 @@
 
 {% load i18n %}
 
-{% block page_title %}{% trans "Home" %}{% endblock page_title %}
+{% block page_title %}{% trans "Recommendations" %}{% endblock page_title %}
 
 {% block content %}
 <div class="container-fluid">
-    <p>Welcome Home</p>
+	<h2>Recommendations for You </h2>
+</div>
+
+
+	<div class="container-fluid">
+    
+    <!-- Movie list -->
+    <div class="row">
+            {% if movie_list %}
+            {% for movie in movie_list %}
+                <div class="col-sm-2 col-md-2 ">
+                    <div class="thumbnail">
+                        <h4>{{ movie.title }}</h4>
+                        <a href="">
+                            
+                        </a>
+                        
+                        <div class="caption">
+
+                            <!-- View Details -->
+                            <a href="" class="btn btn-primary btn-sm" role="button">Give Rating</a>
+
+                                        
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
+        </div>
+    
 </div>
 {% endblock %}
