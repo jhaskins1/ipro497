@@ -43,12 +43,20 @@
             </ul>
         </div>
         <div>
-            <span class="navbar-text">
-                Welcome Imaduddin
-            </span>
-            <span class="navbar-text">
-                Log In/Out
-            </span>
+            <ul class="navbar-nav">
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Welcome (Name)</a>
+                    </li>
+                    <a class="nav-link" href="/"><b>Log Out</b></a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/login"><b>Log In</b></a>
+                </li>
+                {% endif %}
+            </ul>
         </div>
     </nav>
     <main class="container">
