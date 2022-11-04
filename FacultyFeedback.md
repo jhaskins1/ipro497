@@ -53,6 +53,8 @@ Please add an item to your boards to do this github.com/mschray/IPro497Sample/bl
 - Please be ready to demo - when you have working code demoing should not be a big deal
 
 ## Week 11 ##
+- Code walk through while interest not necessary just the working demo
+- Think about the stories that you need to complete for the final demo
 
 ## Week 12 ##
 
