@@ -8,6 +8,8 @@ class SignUpForm(UserCreationForm):
     last_name = forms.CharField(label="Last Name", max_length=30, required=True)
     email = forms.EmailField(label="Email Address", widget=EmailInput, max_length=254)
 
+
+
     class Meta:
         model = User
         fields = ("first_name", "last_name", "username", "email", 'password1', 'password2')
