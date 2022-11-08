@@ -17,6 +17,17 @@ from surprise import Reader
 from surprise.model_selection import cross_validate
 import os
 
+from tmdbv3api import TMDb
+from tmdbv3api import Movie
+
+
+tmdb = TMDb()
+tmdb.api_key = '67721f9e029d822c6ca4ab6fd22e7aaf'
+
+movie = Movie()
+pop = movie.popular()
+for i in pop:
+    print(i.title)
 
 
 #returns reclist, a dict where keys are user ids, values are lists of tuples
