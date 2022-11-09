@@ -5,6 +5,14 @@ import requests
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 
+
+# This file is used for storing functions of logic and processing of information. 
+# E.g. if a user signs up on the sign-up form, this file stores the code of the implementation of the sign-up authentication
+# to store user credentials into the application's database.
+
+
+# This function fetches the movie_details of movies with movie_id from 550 to 556 as a sample/demo for displaying random information
+# on the application's homepage. This also checks if API works or not. 
 def index(request):
     api_key = "864e3baa97800ac0d0036fd1d008ca85"
     movie_list = []
@@ -14,6 +22,8 @@ def index(request):
         movie_list.append(response.json())
     return render(request, 'app/home.html', {'movie_list': movie_list})
 
+
+# This function/code receives the data the user inputs in the sign-up form and then stores the POST data into the SQLite3 database.
 def signup(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -31,7 +41,8 @@ def signup(request):
     
     return render(request, 'registration/signup.html', {'form': form})
 
-
+# This function/code receives the data the user inputs in the login authentication form and then checks
+# if the credentials match the existing user records in the database.
 def login_request(request):
 	if request.method == "POST":
 		form = AuthenticationForm(request, data=request.POST)
@@ -50,7 +61,9 @@ def login_request(request):
 	form = AuthenticationForm()
 	return render(request, 'registration/login.html', {'form':form})
 
-    
+
+
+# This piece of code 'de-authenticates' the user from the application.   
 def logout_request(request):
 	logout(request)
 	messages.info(request, "You have successfully logged out.") 
