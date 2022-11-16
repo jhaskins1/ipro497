@@ -23,7 +23,10 @@ def signup(request):
 #         response = requests.get(url)
 #         movie_list.append(response.json())
 
+def search(request):
     
-
+    return render(request, 
+    'app/search.html',
+    {})
 
 
