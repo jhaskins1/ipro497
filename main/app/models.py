@@ -4,6 +4,8 @@ from django.db import models
 
 
 # Create your models here.
+# This file helps add a data table which is called a model in terms of Django's framework. If you want to add a new table
+# to store/record data, this file is where you add the table along with its integrity constraints, and attributes.
 class Movie(models.Model):
     title = models.CharField(max_length=150)
     description = models.TextField()
