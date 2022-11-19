@@ -73,3 +73,4 @@ def logout_request(request):
 def search(request):
     #Query the database hear
     return render(request, 'app/search.html', {})
+

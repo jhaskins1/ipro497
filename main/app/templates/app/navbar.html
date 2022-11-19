@@ -35,6 +35,13 @@ and URL redirects as well as the first name of the user logged in.-->
             </li>
         </ul>
     </div>
+    <div>
+        <form class="d-flex" method=POST action ="{% url 'search' %}">
+            {% csrf_token %}
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn-outline-secondary" type="submit">Search</button>
+        </form>
+    </div>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
             {% if user.is_authenticated %}
