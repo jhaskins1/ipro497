@@ -12,6 +12,9 @@ class Movie(models.Model):
     release_date = models.DateField()
     runtime_length = models.IntegerField()
 
+    def __str__(self):
+        return self.title
+
 
 class Genre(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)

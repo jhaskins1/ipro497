@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth import login, authenticate, logout 
+from django.contrib.auth import login, authenticate, logout
 from .forms import SignUpForm
+from .models import Movie
 import requests
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
@@ -71,6 +72,10 @@ def logout_request(request):
 
 
 def search(request):
-    #Query the database hear
-    return render(request, 'app/search.html', {})
+    if request.method == "POST":
+        searched = request.POST['searched']
+        movies = Movie.objects.filter(title__contains=searched)
+        return render(request, 'app/search.html', {'searched':searched, 'movies':movies})
+    else:
+        return render(request, 'app/search.html', {})
 

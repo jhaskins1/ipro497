@@ -2,8 +2,15 @@
 
 {% block content %}
     <center>
-    <h1>You Searched For...</h1>
-
+    {% if searched %}
+        <h1>You Searched For {{ searched}} </h1>
+        <br/>
+        {% for movie in movies %}
+            <h2>Found a movie</h2>
+        {% endfor %}
+    {% else %}
+        <h1>You Searched For...</h1>
+    {% endif %}
 
     </center>
 {% endblock %}
