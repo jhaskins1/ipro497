@@ -75,6 +75,7 @@ def search(request):
     if request.method == "POST":
         searched = request.POST['searched']
         movies = Movie.objects.filter(title__contains=searched)
+        print(movies)
         return render(request, 'app/search.html', {'searched':searched, 'movies':movies})
     else:
         return render(request, 'app/search.html', {})
