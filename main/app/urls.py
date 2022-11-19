@@ -16,4 +16,5 @@ urlpatterns = [
     path("login", views.login_request, name ="login"),
     # Similar implementation to that of login.
     path("logout", views.logout_request, name= "logout"),
+    path('search', views.search, name="search")
 ]
