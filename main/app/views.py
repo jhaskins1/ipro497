@@ -70,4 +70,6 @@ def logout_request(request):
 	return render(request, 'app/home.html')
 
 
-
+def search(request):
+    #Query the database hear
+    return render(request, 'app/search.html', {})
