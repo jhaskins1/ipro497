@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <center>
+    {% if searched %}
+        <h1>You Searched For {{ searched}} </h1>
+        <br/>
+        {% for movie in movies %}
+        <a href="{% url 'show-movie' movie.id %}">{{ movie }}</a><br/>
+        {% endfor %}
+    {% else %}
+        <h1>You Searched For...</h1>
+    {% endif %}
+
+    </center>
+{% endblock %}
