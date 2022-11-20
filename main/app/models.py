@@ -43,6 +43,7 @@ class Movie(models.Model):
     languages = models.ManyToManyField(Language)
     cast_members = models.ManyToManyField(Cast)
     streaming_options = models.ManyToManyField(StreamingOption, blank=True)
+    tmdb_id = models.IntegerField()
 
     def __str__(self):
         return self.title + " (" + str(self.release_date)[:4] + ")"
