@@ -21,10 +21,7 @@
             {% for movie in movie_list %}
                 <div class="col-sm-2 col-md-2 ">
                     <div class="thumbnail">
-                        <h4>{{ movie.title }}</h4>
-                        <a href="">
-                            
-                        </a>
+                        <a href="{% url 'show-movie' movie.id %}">{{ movie }}</a>
                         
                         <div class="caption">
 

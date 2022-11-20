@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <center>
+    <h1>{{ movie }}</h1>
+    <br/>
+    Description: {{ movie.description }}<br/>
+    Release Date: {{ movie.release_date }}<br/>
+    Runtime Length: {{ movie.runtime_length }}<br/>
+
+    Genre(s):<br/>
+    {% for genre in genres %}
+    <ul>{{ genre }}</ul>
+    {% endfor %} 
+
+    Language(s):<br/>
+    {% for language in languages %}
+    <ul>{{ lnaguage }}</ul>
+    {% endfor %} 
+
+    Cast:<br/>
+    {% for cast_member in cast_members %}
+    <ul>{{ cast_member }}</ul>
+    {% endfor %}
+
+    Streaming Options:<br/>
+    {% if streaming_options %}
+    {% for streaming_option in streaming_options %}
+    <ul>{{ streaming_option }}</ul>
+    {% endfor %}
+    {% endif %}
+
+
+    </center>
+{% endblock %}

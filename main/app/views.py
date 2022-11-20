@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from .forms import SignUpForm
-from .models import Movie
+from .models import Movie, Genre, Language, Cast, StreamingOption
 import requests
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
@@ -15,12 +15,15 @@ from django.contrib import messages
 # This function fetches the movie_details of movies with movie_id from 550 to 556 as a sample/demo for displaying random information
 # on the application's homepage. This also checks if API works or not. 
 def index(request):
-    api_key = "864e3baa97800ac0d0036fd1d008ca85"
-    movie_list = []
-    for id in range(550, 557):
-        url = "https://api.themoviedb.org/3/movie/" + str(id) + "?api_key=" + api_key + "&language=en-US"
-        response = requests.get(url)
-        movie_list.append(response.json())
+    # api_key = "864e3baa97800ac0d0036fd1d008ca85"
+    # movie_list = []
+    # for id in range(550, 557):
+    #     url = "https://api.themoviedb.org/3/movie/" + str(id) + "?api_key=" + api_key + "&language=en-US"
+    #     response = requests.get(url)
+    #     movie_list.append(response.json())
+
+    # Displaying all movies that are in the database (limit to x movies at some point)
+    movie_list = Movie.objects.all()
     return render(request, 'app/home.html', {'movie_list': movie_list})
 
 
@@ -75,8 +78,15 @@ def search(request):
     if request.method == "POST":
         searched = request.POST['searched']
         movies = Movie.objects.filter(title__contains=searched)
-        print(movies)
         return render(request, 'app/search.html', {'searched':searched, 'movies':movies})
     else:
         return render(request, 'app/search.html', {})
 
+def show_movie(request, movie_id):
+    movie = Movie.objects.get(pk=movie_id)
+    genres = Movie.objects.get(pk=movie_id).genres.all()
+    languages = Movie.objects.get(pk=movie_id).languages.all()
+    cast_members = Movie.objects.get(pk=movie_id).cast_members.all()
+    streaming_options = Movie.objects.get(pk=movie_id).streaming_options.all()
+    return render(request, 'app/show_movie.html', 
+    {'movie': movie, 'genres': genres, 'languages': languages, 'cast_members': cast_members, 'streaming_options': streaming_options})

@@ -17,4 +17,5 @@ urlpatterns = [
     # Similar implementation to that of login.
     path("logout", views.logout_request, name= "logout"),
     path('search', views.search, name="search"),
+    path('show_movie/<movie_id>', views.show_movie, name="show-movie"),
 ]

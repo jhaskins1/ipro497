@@ -6,7 +6,7 @@
         <h1>You Searched For {{ searched}} </h1>
         <br/>
         {% for movie in movies %}
-            <h2>Found a movie</h2>
+            {{ movie }}<br/>
         {% endfor %}
     {% else %}
         <h1>You Searched For...</h1>
