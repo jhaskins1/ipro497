@@ -32,3 +32,10 @@ class Cast(models.Model):
 class StreamingOption(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     streaming_option = models.CharField('Streaming Options', max_length=70)
+
+class NewVieUser(models.Model):
+    username = models.CharField('Username', max_length=30)
+    email = models.EmailField('User Email')
+
+    def __str__(self):
+        return self.username
