@@ -8,22 +8,22 @@
     Release Date: {{ movie.release_date }}<br/>
     Runtime Length: {{ movie.runtime_length }}<br/>
 
-    Genre(s):<br/>
+    Genre(s):
     {% for genre in genres %}
     <ul>{{ genre }}</ul>
     {% endfor %} 
 
-    Language(s):<br/>
+    Language(s):
     {% for language in languages %}
-    <ul>{{ lnaguage }}</ul>
+    <ul>{{ language }}</ul>
     {% endfor %} 
 
-    Cast:<br/>
+    Cast:
     {% for cast_member in cast_members %}
     <ul>{{ cast_member }}</ul>
     {% endfor %}
 
-    Streaming Options:<br/>
+    Streaming Options:
     {% if streaming_options %}
     {% for streaming_option in streaming_options %}
     <ul>{{ streaming_option }}</ul>
