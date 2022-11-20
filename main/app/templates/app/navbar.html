@@ -6,7 +6,9 @@ and URL redirects as well as the first name of the user logged in.-->
 {% load crispy_forms_tags %}
 
 <nav class="navbar navbar-expand-lg" style="background-color: #ACDDE7;">
-    <a class="navbar-brand" href="{% url 'index' %}">NewVie</a>
+    <a class="navbar-brand" href="{% url 'index' %}">
+        <img src="assets/logo.png" alt="NewVie">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
