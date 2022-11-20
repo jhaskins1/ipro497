@@ -7,6 +7,7 @@
 {% block page_title %}{% trans "Recommendations" %}{% endblock page_title %}
 
 {% block content %}
+
 <div class="container-fluid">
 	<h2>Recommendations for You </h2>
 </div>
@@ -20,10 +21,7 @@
             {% for movie in movie_list %}
                 <div class="col-sm-2 col-md-2 ">
                     <div class="thumbnail">
-                        <h4>{{ movie.title }}</h4>
-                        <a href="">
-                            
-                        </a>
+                        <a href="{% url 'show-movie' movie.id %}">{{ movie }}</a>
                         
                         <div class="caption">
 
