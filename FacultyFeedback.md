@@ -69,5 +69,13 @@ Please add an item to your boards to do this github.com/mschray/IPro497Sample/bl
 - Focus on coding work that shows the unique value of your product
 - For the dry run week, I'll give you about an hour of time to organize yourselves via team work time and then we'll all come back to the main room and I'll pick teams to present in random order
 ## Week 14 ##
+- Good logo
+- SVD - tell us what that means - what is SVD
+- Specification - less text you are talking to me. Just short bullets
+- Think less text because your presenting the slides
+- Scenario 1 - so much text 
+- Nice logo
+- Avoid using the admin login - try to create a specific user
+- Do the demo as a user working through on of the scenarios - not it does this and this and this.
 
 ## Week 15 ##
