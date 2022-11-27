@@ -27,12 +27,12 @@
                         
                         <div class="caption">
 
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#give-rating">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" href="#rate-{{movie.pk}}"">
                                 Give Rating
                             </button>
                         
                             <!-- Modal -->
-                            <div class="modal fade" id="give-rating" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="rate-{{movie.pk}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
