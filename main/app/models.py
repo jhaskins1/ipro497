@@ -1,6 +1,7 @@
 from xml.parsers.expat import model
 from django.conf import settings
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 # Create your models here.
@@ -51,7 +52,14 @@ class Movie(models.Model):
 
 class NewVieUser(models.Model):
     username = models.CharField('Username', max_length=30)
+    password = models.CharField('Password', max_length=30)
     email = models.EmailField('User Email')
 
     def __str__(self):
         return self.username
+
+class Rating(models.Model):
+    user = models.ForeignKey(NewVieUser)
+    movie = models.ForeignKey(Movie)
+    rating = models.PositiveSmallIntegerField(validators=[
+        MaxValueValidator(5), MinValueValidator(1)]) # Ensures that we will only have ratings between 1 and 5
