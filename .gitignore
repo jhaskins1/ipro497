@@ -17,3 +17,5 @@ main/main/__pycache__/__init__.cpython-311.pyc
 main/main/__pycache__/settings.cpython-311.pyc
 main/main/__pycache__/urls.cpython-311.pyc
 main/main/__pycache__/wsgi.cpython-311.pyc
+main/app/migrations/0009_newvieuser_password_rating.py
+main/app/migrations/__pycache__/0009_newvieuser_password_rating.cpython-311.pyc

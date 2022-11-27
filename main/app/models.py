@@ -59,7 +59,7 @@ class NewVieUser(models.Model):
         return self.username
 
 class Rating(models.Model):
-    user = models.ForeignKey(NewVieUser)
-    movie = models.ForeignKey(Movie)
+    user = models.ForeignKey(NewVieUser, on_delete=models.CASCADE)
+    movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     rating = models.PositiveSmallIntegerField(validators=[
         MaxValueValidator(5), MinValueValidator(1)]) # Ensures that we will only have ratings between 1 and 5
