@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Movie, Genre, Cast, Language, StreamingOption, NewVieUser
+from .models import Movie, Genre, Cast, Language, StreamingOption, NewVieUser, Rating
 # Register your models here.
 
 # Once you create the models and migrate the model specifications to the database, you will need to register
@@ -13,3 +13,4 @@ admin.site.register(Cast)
 admin.site.register(Language)
 admin.site.register(StreamingOption)
 admin.site.register(NewVieUser)
+admin.site.register(Rating)

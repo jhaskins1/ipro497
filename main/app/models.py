@@ -63,3 +63,6 @@ class Rating(models.Model):
     movie = models.ForeignKey(Movie, on_delete=models.CASCADE)
     rating = models.PositiveSmallIntegerField(validators=[
         MaxValueValidator(5), MinValueValidator(1)]) # Ensures that we will only have ratings between 1 and 5
+
+    def __str__(self):
+        return self.rating
