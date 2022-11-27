@@ -1,6 +1,8 @@
 {% extends 'app/base.html' %}
 
 {% block content %}
+
+
     <center>
     <h1>{{ movie }}</h1>
     <br/>
@@ -29,7 +31,35 @@
     <ul>{{ streaming_option }}</ul>
     {% endfor %}
     {% endif %}
+    <br/>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#give-rating">
+        Give Rating
+    </button>
 
+    <!-- Modal -->
+    <div class="modal fade" id="give-rating" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Rate '{{ movie }}'</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="rating">
+                        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit Rating</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </center>
 {% endblock %}
