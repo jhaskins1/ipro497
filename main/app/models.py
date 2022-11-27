@@ -65,4 +65,4 @@ class Rating(models.Model):
         MaxValueValidator(5), MinValueValidator(1)]) # Ensures that we will only have ratings between 1 and 5
 
     def __str__(self):
-        return self.rating
+        return self.user.username + " '" + self.movie.title + "' " + str(self.rating)
