@@ -2,63 +2,72 @@
 
 {% block content %}
 
-    <center>
-    <h1>{{ movie }}</h1>
-    <br/>
-    Description: {{ movie.description }}<br/>
-    Release Date: {{ movie.release_date }}<br/>
-    Runtime Length: {{ movie.runtime_length }}<br/>
-
-    Genre(s):
-    {% for genre in genres %}
-    <ul>{{ genre }}</ul>
-    {% endfor %} 
-
-    Language(s):
-    {% for language in languages %}
-    <ul>{{ language }}</ul>
-    {% endfor %} 
-
-    Cast:
-    {% for cast_member in cast_members %}
-    <ul>{{ cast_member }}</ul>
-    {% endfor %}
-
-    Streaming Options:
-    {% if streaming_options %}
-    {% for streaming_option in streaming_options %}
-    <ul>{{ streaming_option }}</ul>
-    {% endfor %}
-    {% endif %}
-    <br/>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#give-rating">
-        Give Rating
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="give-rating" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Rate '{{ movie }}'</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="rating">
-                        <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
-                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
-                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
-                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
-                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+<div class="card border-dark mt-4">
+    <h2 class="card-header text-center">{{ movie }}</h2>
+    <div class="card-body">
+        <p class="card-text">{{ movie.description }}</p>
+        <hr>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <p>Runtime Length: {{ movie.runtime_length }}</p>
+            </div>
+            <div class="col">
+                <p>Release Date: {{ movie.release_date }}</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                Genre(s):
+                {% for genre in genres %}
+                <li>{{ genre }}</li>
+                {% endfor %}
+            </div>
+            <div class="col">
+                Languages(s):
+                {% for language in languages %}
+                <li>{{ language }}</li>
+                {% endfor %}
+            </div>
+            <div class="col">
+                Streaming Options(s):
+                {% for streaming_option in streaming_options %}
+                <li>{{ streaming_option }}</li>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#give-rating">
+            Give Rating
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="give-rating" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Rate '{{ movie }}'</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Submit Rating</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div class="modal-body">
+                        <div class="rating">
+                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Submit Rating</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    </center>
+</div>
 {% endblock %}
