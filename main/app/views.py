@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
-from .forms import SignUpForm, RatingForm
+from .forms import SignUpForm
 from .models import Movie, Genre, Language, Cast, StreamingOption
 import requests
 from django.contrib.auth.forms import AuthenticationForm
