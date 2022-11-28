@@ -15,12 +15,3 @@ class SignUpForm(UserCreationForm):
     class Meta:
         model = User
         fields = ("first_name", "last_name", "username", "email", 'password1', 'password2')
-
-class RatingForm(forms.Form):
-    CHOICES = [('1', '1'),
-    ('2', '2'),
-    ('3', '3'),
-    ('4', '4'),
-    ('5', '5'),]
-
-    rating = forms.ChoiceField(choices=CHOICES)
